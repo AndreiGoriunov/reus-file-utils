@@ -6,9 +6,10 @@ readme = "README.md"
 authors = [
     { name = "Andrei Goriunov", email = "@" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.14,<3.15"
 dependencies = [
     "dynaconf>=3.3.5",
+    "pyside6>=6.11.2",
     "pyyaml>=6.0.3",
 ]
 
@@ -18,3 +19,15 @@ reus-file-utils = "reus_file_utils:main"
 [build-system]
 requires = ["uv_build>=0.12.22,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.19.1",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version_provider = "uv"
+version_scheme = "pep440"
+tag_format = "v$version"
+bump_message = "bump: version $current_version → $new_version"

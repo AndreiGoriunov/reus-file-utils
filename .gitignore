@@ -1,0 +1,53 @@
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.uv-cache/
+
+# Build and packaging output (keep PyInstaller .spec files in Git)
+/build/
+/dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Test, lint, type-checking, and coverage caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+junit.xml
+
+# Local configuration and secrets (keep example files)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.secrets.*
+!.secrets.example.*
+settings.local.*
+
+# IDE and editor files
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Runtime logs
+*.log
+
+# Commit uv.lock, .python-version, shared settings, and Qt .ui/.qrc sources.
