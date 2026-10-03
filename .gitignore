@@ -1,0 +1,6 @@
+build
+release
+.vscode
+dist
+main.spec
+__pycache__
